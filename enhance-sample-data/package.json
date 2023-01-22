@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "json": "^11.0.0",
+    "mathjs": "^11.2.1",
+    "readable-stream": "^4.2.0",
+    "scikit-learn": "^0.1.0"
+  }
+}

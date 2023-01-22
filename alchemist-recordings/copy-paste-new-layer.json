@@ -1,0 +1,5 @@
+[
+{"_obj":"copyEvent"},
+{"_obj":"make","_target":[{"_ref":"layer"}],"layerID":21},
+{"_obj":"paste","antiAlias":{"_enum":"antiAliasType","_value":"antiAliasNone"},"as":{"_class":"pixel"},"inPlace":true}
+]

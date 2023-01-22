@@ -1,0 +1,258 @@
+[
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "-0.8641229451100952",
+            "dst_aesthetic_score": "-0.8030610270139841"
+        },
+        "coefficients": "[-5.01364051 -1.21214439]",
+        "mean_squared_error": "15.13273627894286",
+        "variance_score": "0.7914069802014304"
+    },
+    {
+        "name": "dst_similarity",
+        "correlations": {
+            "cfg_scale": "0.1626592363443758",
+            "ddim_steps": "-0.40406015530276096",
+            "diff_similarity": "0.8073483131313587"
+        },
+        "coefficients": "[7.17118794e-02 6.91047416e-05 1.21458676e+01]",
+        "mean_squared_error": "4.424587798741353",
+        "variance_score": "0.6902388175809266"
+    },
+    {
+        "name": "mod_similiarity",
+        "correlations": {
+            "cfg_scale": "-0.13775917427379794",
+            "ddim_steps": "0.43859243235682405",
+            "diff_similarity": "-0.8682413551338419"
+        },
+        "coefficients": "[-1.32284342e-01 -6.68995320e-05 -2.92313091e+01]",
+        "mean_squared_error": "15.846530220122428",
+        "variance_score": "0.7815678849472726"
+    },
+    {
+        "name": "diff_similarity",
+        "correlations": {
+            "cfg_scale": "0.1662065131888252",
+            "ddim_steps": "-0.40479496527110703",
+            "diff_similarity": "0.8055331624154825"
+        },
+        "coefficients": "[ 7.17067987e-02 -1.64679014e-05  1.21119795e+01]",
+        "mean_squared_error": "4.525373646812696",
+        "variance_score": "0.6856256670047581"
+    },
+    {
+        "name": "aesthetic_score_difference",
+        "correlations": {
+            "cfg_scale": "0.22074774257385127",
+            "ddim_steps": "-0.3303438482963152",
+            "diff_similarity": "0.696532909320143"
+        },
+        "coefficients": "[1.82123895e-02 9.25775697e-05 2.10659020e+00]",
+        "mean_squared_error": "0.28549551361486075",
+        "variance_score": "0.5096932961248366"
+    },
+    {
+        "name": "dst_aesthetic_score",
+        "correlations": {
+            "cfg_scale": "0.22074774257385116",
+            "ddim_steps": "-0.3303438482963151",
+            "diff_similarity": "0.6965329093201428"
+        },
+        "coefficients": "[1.82123895e-02 9.25775697e-05 2.10659020e+00]",
+        "mean_squared_error": "0.28549551361486075",
+        "variance_score": "0.5096932961248366"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "-0.8641229451100952",
+            "dst_aesthetic_score": "-0.8030610270139841"
+        },
+        "coefficients": "[-5.01364051 -1.21214439]",
+        "mean_squared_error": "15.13273627894286",
+        "variance_score": "0.7914069802014304"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "0.04726523505653076",
+            "dst_aesthetic_score": "-0.05009207322009129"
+        },
+        "coefficients": "[-0.36972021  0.15721752]",
+        "mean_squared_error": "23.192748669516373",
+        "variance_score": "0.00789915985494627"
+    },
+    {
+        "name": "dst_aesthetic_score",
+        "correlations": {
+            "cfg_scale": "0.22074774257385116",
+            "ddim_steps": "-0.3303438482963151",
+            "diff_similarity": "0.6965329093201428"
+        },
+        "coefficients": "[1.82123895e-02 9.25775697e-05 2.10659020e+00]",
+        "mean_squared_error": "0.28549551361486075",
+        "variance_score": "0.5096932961248366"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "-0.07047209601416658",
+            "dst_aesthetic_score": "0.045610489673614196"
+        },
+        "coefficients": "[ 0.91254143 -0.20236225]",
+        "mean_squared_error": "19.750982449483068",
+        "variance_score": "0.008252681144641727"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "-0.07047209601416658",
+            "dst_aesthetic_score": "0.045610489673614196"
+        },
+        "coefficients": "[ 0.91254143 -0.20236225]",
+        "mean_squared_error": "19.750982449483068",
+        "variance_score": "0.008252681144641727"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "0.36647879324192334",
+            "dst_aesthetic_score": "-0.06430058985275357"
+        },
+        "coefficients": "[-1.58061201  0.7620369 ]",
+        "mean_squared_error": "22.984610746219563",
+        "variance_score": "0.16574411082489737"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "0.3699417899754756",
+            "dst_aesthetic_score": "-0.07919532924346184"
+        },
+        "coefficients": "[-1.93339593  0.79995581]",
+        "mean_squared_error": "24.83744283126536",
+        "variance_score": "0.16055048672246452"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "0.3699417899754756",
+            "dst_aesthetic_score": "-0.07919532924346184"
+        },
+        "coefficients": "[-1.93339593  0.79995581]",
+        "mean_squared_error": "24.83744283126536",
+        "variance_score": "0.16055048672246452"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "0.3699417899754756",
+            "dst_aesthetic_score": "-0.07919532924346184"
+        },
+        "coefficients": "[-1.93339593  0.79995581]",
+        "mean_squared_error": "24.83744283126536",
+        "variance_score": "0.16055048672246452"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "0.3699417899754756",
+            "dst_aesthetic_score": "-0.07919532924346184"
+        },
+        "coefficients": "[-1.93339593  0.79995581]",
+        "mean_squared_error": "24.83744283126536",
+        "variance_score": "0.16055048672246452"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "0.3699417899754756",
+            "dst_aesthetic_score": "-0.07919532924346184"
+        },
+        "coefficients": "[-1.93339593  0.79995581]",
+        "mean_squared_error": "24.83744283126536",
+        "variance_score": "0.16055048672246452"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "0.3699417899754756",
+            "dst_aesthetic_score": "-0.07919532924346184"
+        },
+        "coefficients": "[-1.93339593  0.79995581]",
+        "mean_squared_error": "24.83744283126536",
+        "variance_score": "0.16055048672246452"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "0.3699417899754756",
+            "dst_aesthetic_score": "-0.07919532924346184"
+        },
+        "coefficients": "[-1.93339593  0.79995581]",
+        "mean_squared_error": "24.83744283126536",
+        "variance_score": "0.16055048672246452"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "0.3699417899754756",
+            "dst_aesthetic_score": "-0.07919532924346184"
+        },
+        "coefficients": "[-1.93339593  0.79995581]",
+        "mean_squared_error": "24.83744283126536",
+        "variance_score": "0.16055048672246452"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "0.3699417899754756",
+            "dst_aesthetic_score": "-0.07919532924346184"
+        },
+        "coefficients": "[-1.93339593  0.79995581]",
+        "mean_squared_error": "24.83744283126536",
+        "variance_score": "0.16055048672246452"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "0.3699417899754756",
+            "dst_aesthetic_score": "-0.07919532924346184"
+        },
+        "coefficients": "[-1.93339593  0.79995581]",
+        "mean_squared_error": "24.83744283126536",
+        "variance_score": "0.16055048672246452"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "0.3699417899754756",
+            "dst_aesthetic_score": "-0.07919532924346184"
+        },
+        "coefficients": "[-1.93339593  0.79995581]",
+        "mean_squared_error": "24.83744283126536",
+        "variance_score": "0.16055048672246452"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "0.3699417899754756",
+            "dst_aesthetic_score": "-0.07919532924346184"
+        },
+        "coefficients": "[-1.93339593  0.79995581]",
+        "mean_squared_error": "24.83744283126536",
+        "variance_score": "0.16055048672246452"
+    },
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "0.3699417899754756",
+            "dst_aesthetic_score": "-0.07919532924346184"
+        },
+        "coefficients": "[-1.93339593  0.79995581]",
+        "mean_squared_error": "24.83744283126536",
+        "variance_score": "0.16055048672246452"
+    }
+]

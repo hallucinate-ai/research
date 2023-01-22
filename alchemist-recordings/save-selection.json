@@ -1,0 +1,12 @@
+[
+	{
+		"_obj": "duplicate",
+		"_target": [
+			{
+				"_property": "selection",
+				"_ref": "channel"
+			}
+		],
+		"name": "Test Selection"
+	}
+]

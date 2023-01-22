@@ -1,0 +1,20 @@
+[
+	{
+		"_obj": "select",
+		"_target": [
+			{
+				"_name": "Test Selection",
+				"_ref": "channel"
+			}
+		]
+	},
+	{
+		"_obj": "delete",
+		"_target": [
+			{
+				"_enum": "ordinal",
+				"_ref": "channel"
+			}
+		]
+	}
+]

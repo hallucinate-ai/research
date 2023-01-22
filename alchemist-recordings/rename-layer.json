@@ -1,0 +1,15 @@
+[
+	{
+		"_obj": "set",
+		"_target": [
+			{
+				"_enum": "ordinal",
+				"_ref": "layer"
+			}
+		],
+		"to": {
+			"_obj": "layer",
+			"name": "Test Layer"
+		}
+	}
+]

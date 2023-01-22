@@ -1,0 +1,47 @@
+{
+	"manifestVersion" : 4,
+	"name" : "Hallucinate",
+	"host" : {
+		"app" : "PS",
+		"minVersion" : "22.0.0"
+	},
+	"main" : "index.html",
+	"entrypoints" : [ {
+		"minimumSize" : {
+			"width" : 230,
+			"height" : 200
+		},
+		"maximumSize" : {
+			"width" : 2000,
+			"height" : 2000
+		},
+		"preferredDockedSize" : {
+			"width" : 230,
+			"height" : 300
+		},
+		"id" : "vanilla",
+		"label" : {
+			"default" : "Starter Panel"
+		},
+		"type" : "panel",
+		"preferredFloatingSize" : {
+			"width" : 230,
+			"height" : 300
+		}
+	} ],
+	"id" : "ee9ba8d3",
+	"icons" : [ {
+		"path" : "icons/dark.png",
+		"width" : 23,
+		"scale" : [ 1, 2 ],
+		"theme" : [ "darkest", "dark", "medium" ],
+		"height" : 23
+	}, {
+		"path" : "icons/light.png",
+		"width" : 23,
+		"scale" : [ 1, 2 ],
+		"theme" : [ "lightest", "light" ],
+		"height" : 23
+	} ],
+	"version" : "2.0.0"
+}

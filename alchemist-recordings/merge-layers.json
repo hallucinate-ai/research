@@ -1,0 +1,37 @@
+[
+	{
+		"_obj": "select",
+		"_target": [
+			{
+				"_name": "Layer 3",
+				"_ref": "layer"
+			}
+		],
+		"layerID": [
+			106
+		],
+		"makeVisible": false
+	},
+	{
+		"_obj": "select",
+		"_target": [
+			{
+				"_name": "Layer 1",
+				"_ref": "layer"
+			}
+		],
+		"layerID": [
+			104,
+			105,
+			106
+		],
+		"makeVisible": false,
+		"selectionModifier": {
+			"_enum": "selectionModifierType",
+			"_value": "addToSelectionContinuous"
+		}
+	},
+	{
+		"_obj": "mergeLayersNew"
+	}
+]

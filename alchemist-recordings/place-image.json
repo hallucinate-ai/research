@@ -1,0 +1,32 @@
+[
+	{
+		"ID": 5,
+		"_obj": "placeEvent",
+		"freeTransformCenterState": {
+			"_enum": "quadCenterState",
+			"_value": "QCSAverage"
+		},
+		"null": {
+			"_kind": "local",
+			"_path": "C:\\Users\\Mwni\\Pictures\\apu15.png"
+		},
+		"offset": {
+			"_obj": "offset",
+			"horizontal": {
+				"_unit": "pixelsUnit",
+				"_value": -48.0
+			},
+			"vertical": {
+				"_unit": "pixelsUnit",
+				"_value": -28.0
+			}
+		},
+		"replaceLayer": {
+			"_obj": "placeEvent",
+			"to": {
+				"_id": 5,
+				"_ref": "layer"
+			}
+		}
+	}
+]

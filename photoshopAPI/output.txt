@@ -1,0 +1,12 @@
+
+
+“We have held that a defendant may raise an as-applied constitutional challenge to a statute on appeal even if the defendant did not raise the issue below. State v. Fults, 343 Or. 515, 522, 173 P.3d 822 (2007). We have also held that a defendant may raise a facial constitutional challenge to a statute on appeal even if the defendant did not raise the issue below. State v. Rodriguez, 347 Or. 46, 54, 217 P.3d 659 (2009).” 
+State v. Smith, 357 Or. 809, 817, 355 P.3d 1161 (2015)
+
+C. The Palmer decision is contrary to US Supreme Court precedent which allows for post conviction relief when a person has been convicted under facially invalid statutes where the state lacked subject matter jurisdiction.
+
+“The writ of habeas corpus does not act upon the prisoner who seeks relief, but upon the custodian who holds him in what is alleged to be unlawful custody. It is the custody and not the prisoner which is brought before the court, and the inquiry is into the legality of such custody.” Ex parte Royall, 117 U.S. 241, 251 (1886). See also Menna v. New York, 423 U.S. 61, 62 (1975) (“The writ of habeas corpus is available to test the legality of executive detention.”); Blackledge v. Perry, 417 U.S. 21, 30 (1974) (“The writ of habeas corpus has traditionally been regarded as an extraordinary remedy, a bulwark against convictions that violate fundamental fairness.”).
+
+CONCLUSION
+
+For the foregoing reasons, this court should reverse the decision of the lower court and hold that ORS 163.472 is unconstitutional both as applied and on its face, and that Palmer v. State of Oregon 867 P. 2d 1368 does not interpret the PCHA (Post Conviction Hearing Act) to preclude all jurisdictional unconstitutional statute claims, or as facial unconstitutional statute claims, where those claims were not brought at trial by trial counsel, upon contemporaneous objection by his client.

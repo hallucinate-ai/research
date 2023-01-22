@@ -1,0 +1,5 @@
+[
+{"_obj":"select","_target":[{"_name":"Background","_ref":"layer"}],"layerID":[1],"makeVisible":false},
+{"_obj":"select","_target":[{"_name":"Layer 1","_ref":"layer"}],"layerID":[115],"makeVisible":false},
+{"_obj":"invokeCommand","commandID":-727}
+]

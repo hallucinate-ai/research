@@ -1,0 +1,43 @@
+[
+	{
+		"_obj": "cut"
+	},
+	{
+		"_obj": "set",
+		"_target": [
+			{
+				"_property": "selection",
+				"_ref": "channel"
+			}
+		],
+		"to": {
+			"_obj": "rectangle",
+			"bottom": {
+				"_unit": "pixelsUnit",
+				"_value": 368.0
+			},
+			"left": {
+				"_unit": "pixelsUnit",
+				"_value": 82.0
+			},
+			"right": {
+				"_unit": "pixelsUnit",
+				"_value": 640.0
+			},
+			"top": {
+				"_unit": "pixelsUnit",
+				"_value": 0.0
+			}
+		}
+	},
+	{
+		"_obj": "pasteInto",
+		"antiAlias": {
+			"_enum": "antiAliasType",
+			"_value": "antiAliasNone"
+		},
+		"as": {
+			"_class": "pixel"
+		}
+	}
+]

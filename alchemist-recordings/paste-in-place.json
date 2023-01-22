@@ -1,0 +1,13 @@
+[
+	{
+		"_obj": "paste",
+		"antiAlias": {
+			"_enum": "antiAliasType",
+			"_value": "antiAliasNone"
+		},
+		"as": {
+			"_class": "pixel"
+		},
+		"inPlace": true
+	}
+]

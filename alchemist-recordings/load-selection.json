@@ -1,0 +1,15 @@
+[
+	{
+		"_obj": "set",
+		"_target": [
+			{
+				"_property": "selection",
+				"_ref": "channel"
+			}
+		],
+		"to": {
+			"_name": "Test Selection",
+			"_ref": "channel"
+		}
+	}
+]

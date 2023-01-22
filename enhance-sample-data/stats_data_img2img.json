@@ -1,0 +1,67 @@
+[
+    {
+        "name": "fitness_landscape",
+        "correlations": {
+            "dst_similarity": "0.04726523505653076",
+            "dst_aesthetic_score": "-0.05009207322009129"
+        },
+        "coefficients": "[-0.36972021  0.15721752]",
+        "mean_squared_error": "23.192748669516373",
+        "variance_score": "0.00789915985494627"
+    },
+    {
+        "name": "dst_similarity",
+        "correlations": {
+            "cfg_scale": "-0.005751956308511731",
+            "ddim_steps": "-0.04252926971750519",
+            "diff_similarity": "0.16168797635182366"
+        },
+        "coefficients": "[-2.40200586e-03  4.00810439e-04  1.23250973e+00]",
+        "mean_squared_error": "2.657717821240764",
+        "variance_score": "0.02494020707959732"
+    },
+    {
+        "name": "mod_similiarity",
+        "correlations": {
+            "cfg_scale": "-0.018350221888279908",
+            "ddim_steps": "0.32370497654182373",
+            "diff_similarity": "-0.6505408671461417"
+        },
+        "coefficients": "[-2.12762935e-02  6.65911047e-05 -1.24545418e+01]",
+        "mean_squared_error": "13.166392470089765",
+        "variance_score": "0.4367899545936852"
+    },
+    {
+        "name": "diff_similarity",
+        "correlations": {
+            "cfg_scale": "-0.006718188712460223",
+            "ddim_steps": "-0.044146591051512495",
+            "diff_similarity": "0.16307602340339375"
+        },
+        "coefficients": "[-8.75846306e-04  3.13193477e-04  1.34702929e+00]",
+        "mean_squared_error": "2.25050197856388",
+        "variance_score": "0.012363983423727465"
+    },
+    {
+        "name": "aesthetic_score_difference",
+        "correlations": {
+            "cfg_scale": "-0.01805556765404453",
+            "ddim_steps": "-0.1334950057723155",
+            "diff_similarity": "0.32922543899836176"
+        },
+        "coefficients": "[-1.84863694e-03  1.23079438e-04  7.14755861e-01]",
+        "mean_squared_error": "0.23181563531526544",
+        "variance_score": "0.11334515239026643"
+    },
+    {
+        "name": "dst_aesthetic_score",
+        "correlations": {
+            "cfg_scale": "0.00902252664927777",
+            "ddim_steps": "-0.10591261329055582",
+            "diff_similarity": "0.29238794244395766"
+        },
+        "coefficients": "[1.64109164e-03 1.97295741e-04 7.13364683e-01]",
+        "mean_squared_error": "0.30477741347842513",
+        "variance_score": "0.09045471055777243"
+    }
+]

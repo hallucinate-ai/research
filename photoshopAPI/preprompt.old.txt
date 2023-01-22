@@ -1,0 +1,896 @@
+Photoshop API documentation(1.0)
+API Documentation
+
+Photoshop
+APIs powered by Photoshop
+
+Create renditions
+Create renditions. To get status of this job, call Status API.
+To know more about this feature refer Rendering Conversions
+
+header Parameters
+Authorization
+required
+string
+Authorization
+
+x-api-key
+required
+string
+API key/client id
+
+Content-Type
+required
+string
+application/json
+
+x-gw-ims-org-id	
+string
+IMS organization ID. This needs to be sent only if it is desirable to receive the job status through Adobe I/O Events.
+
+Request Body schema: application/json
+inputs
+required
+Array of objects (input_objects_max_1) <= 1 items
+An object describing an input file. Currently supported filetypes include:jpeg, png, psd, tiff
+
+outputs
+required
+Array of objects (output_objects) non-empty
+An array of hashes describing the output files. Output file format can be any of psd, jpeg, png, or tiff and storage type can be any of external, adobe, azure or dropbox
+
+Responses
+202Successful operation
+400Bad Request
+402Trial Limit Exceeded
+403Unauthorized
+404Not Found
+409File Overwrite Error
+410Asset Link Invalid
+500Internal Server Error
+
+POST
+/pie/psdService/renditionCreate
+Request samples
+Payloadshellbatch_exampleicc_profile_example
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"inputs": [
+{}
+],
+"outputs": [
+{}
+]
+}
+Response samples
+202400402403404409410
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"_links": {
+"self": {}
+}
+}
+Replace Smart Object
+Edits a PSD for replacing embedded smart object and then generate renditions and/or save a new psd. To get status of this job, call Status API.
+To know more about this feature refer SmartObject
+
+header Parameters
+Authorization
+required
+string
+Authorization
+
+x-api-key
+required
+string
+API key/client id
+
+Content-Type
+required
+string
+application/json
+
+x-gw-ims-org-id	
+string
+IMS organization ID. This needs to be sent only if it is desirable to receive the job status through Adobe I/O Events.
+
+Request Body schema: application/json
+inputs
+required
+Array of objects (input_objects_max_1) <= 1 items
+An object describing an input file. Currently supported filetypes include:jpeg, png, psd, tiff
+
+options
+required
+object
+User can replace smart object layers using options block
+
+outputs
+required
+Array of objects (output_objects_smart_object) non-empty
+An array of hashes describing the output files. Output file format can be any of psd, jpeg, png, or tiff and storage type can be any of external, adobe, azure or dropbox
+
+Responses
+202Successful operation
+400Bad Request
+402Trial Limit Exceeded
+403Unauthorized
+404Not Found
+409File Overwrite Error
+410Asset Link Invalid
+500Internal Server Error
+
+POST
+/pie/psdService/smartObject
+Request samples
+Payloadshell
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"inputs": [
+{}
+],
+"options": {
+"layers": []
+},
+"outputs": [
+{}
+]
+}
+Response samples
+202400402403404409410
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"_links": {
+"self": {}
+}
+}
+Execute Photoshop Actions
+Executes Photoshop Actions on a given image. To get status of this job, call Status API.
+To know more about this feature refer Photoshop Actions
+
+header Parameters
+Authorization
+required
+string
+Authorization
+
+x-api-key
+required
+string
+API key/client id
+
+Content-Type
+required
+string
+application/json
+
+x-gw-ims-org-id	
+string
+IMS organization ID. This needs to be sent only if it is desirable to receive the job status through Adobe I/O Events.
+
+Request Body schema: application/json
+inputs
+required
+Array of objects (input_objects_max_1) <= 1 items
+An object describing an input file. Currently supported filetypes include:jpeg, png, psd, tiff
+
+options
+required
+object or object
+outputs
+required
+Array of objects (definitions-output_objects) non-empty
+An array of hashes describing the output files. Output file format can be any of psd, jpeg, png, or tiff and storage type can be any of external, adobe, azure or dropbox
+
+Responses
+202Successful operation
+400Bad Request
+402Trial Limit Exceeded
+403Unauthorized
+404Not Found
+409File Overwrite Error
+410Asset Link Invalid
+500Internal Server Error
+
+POST
+/pie/psdService/photoshopActions
+Request samples
+Payloadshell
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"inputs": [
+{}
+],
+"options": { },
+"outputs": [
+{}
+]
+}
+Response samples
+202400402403404409410
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"_links": {
+"self": {}
+}
+}
+Execute Product Crop
+Executes Product Crop on a given image. To get status of this job, call Status API.
+To know more about this feature refer ProductCrop
+
+header Parameters
+Authorization
+required
+string
+Authorization
+
+x-api-key
+required
+string
+API key/client id
+
+Content-Type
+required
+string
+application/json
+
+x-gw-ims-org-id	
+string
+IMS organization ID. This needs to be sent only if it is desirable to receive the job status through Adobe I/O Events.
+
+Request Body schema: application/json
+inputs
+required
+Array of objects (input_objects_max_1) <= 1 items
+An object describing an input file. Currently supported filetypes include:jpeg, png, psd, tiff
+
+options
+required
+object
+outputs
+required
+Array of objects (definitions-output_objects) non-empty
+An array of hashes describing the output files. Output file format can be any of psd, jpeg, png, or tiff and storage type can be any of external, adobe, azure or dropbox
+
+Responses
+202Successful operation
+400Bad Request
+402Trial Limit Exceeded
+403Unauthorized
+404Not Found
+409File Overwrite Error
+410Asset Link Invalid
+500Internal Server Error
+
+POST
+/pie/psdService/productCrop
+Request samples
+Payloadshell
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"inputs": [
+{}
+],
+"options": {
+"unit": "Pixels",
+"width": 0,
+"height": 0
+},
+"outputs": [
+{}
+]
+}
+Response samples
+202400402403404409410
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"_links": {
+"self": {}
+}
+}
+Execute Depth Blur
+Executes Depth Blur on a given image. To get status of this job, call Status API.
+To know more about this feature refer DepthBlur
+
+header Parameters
+Authorization
+required
+string
+Authorization
+
+x-api-key
+required
+string
+API key/client id
+
+Content-Type
+required
+string
+application/json
+
+x-gw-ims-org-id	
+string
+IMS organization ID. This needs to be sent only if it is desirable to receive the job status through Adobe I/O Events.
+
+Request Body schema: application/json
+inputs
+required
+Array of objects (input_objects_max_1) <= 1 items
+An object describing an input file. Currently supported filetypes include:jpeg, png, psd, tiff
+
+options	
+object
+outputs
+required
+Array of objects (definitions-output_objects) non-empty
+An array of hashes describing the output files. Output file format can be any of psd, jpeg, png, or tiff and storage type can be any of external, adobe, azure or dropbox
+
+Responses
+202Successful operation
+400Bad Request
+402Trial Limit Exceeded
+403Unauthorized
+404Not Found
+409File Overwrite Error
+410Asset Link Invalid
+500Internal Server Error
+
+POST
+/pie/psdService/depthBlur
+Request samples
+Payloadshell
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"inputs": [
+{}
+],
+"options": {
+"focalDistance": 0,
+"focalRange": 0,
+"focalSelector": {},
+"focusSubject": false,
+"blurStrength": 50,
+"haze": 0,
+"temp": 0,
+"tint": 0,
+"saturation": 0,
+"brightness": 0,
+"grain": 0
+},
+"outputs": [
+{}
+]
+}
+Response samples
+202400402403404409410
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"_links": {
+"self": {}
+}
+}
+Edit text layers
+Edit one or more text layers. To get status of this job, call Status API.
+To know more about this feature refer Text
+
+header Parameters
+Authorization
+required
+string
+Authorization
+
+x-api-key
+required
+string
+API key/client id
+
+Content-Type
+required
+string
+application/json
+
+x-gw-ims-org-id	
+string
+IMS organization ID. This needs to be sent only if it is desirable to receive the job status through Adobe I/O Events.
+
+Request Body schema: application/json
+inputs
+required
+Array of objects (input_objects_max_1) <= 1 items
+An object describing an input file. Currently supported filetypes include:jpeg, png, psd, tiff
+
+options
+required
+object
+User can update properties related to text layers and fonts using options block
+
+outputs
+required
+Array of objects (definitions-output_objects) non-empty
+An array of hashes describing the output files. Output file format can be any of psd, jpeg, png, or tiff and storage type can be any of external, adobe, azure or dropbox
+
+Responses
+202Successful operation
+400Bad Request
+402Trial Limit Exceeded
+403Unauthorized
+404Not Found
+409File Overwrite Error
+410Asset Link Invalid
+500Internal Server Error
+
+POST
+/pie/psdService/text
+Request samples
+Payloadshell
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"inputs": [
+{}
+],
+"options": {
+"manageMissingFonts": "fail",
+"globalFont": "string",
+"fonts": [],
+"layers": []
+},
+"outputs": [
+{}
+]
+}
+Response samples
+202400402403404409410
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"_links": {
+"self": {}
+}
+}
+Apply psd edits
+Apply psd edits. To get status of this job, call Status API.
+To know more about this feature refer Document Level Edits and Layer Level Edits
+
+header Parameters
+Authorization
+required
+string
+Authorization
+
+x-api-key
+required
+string
+API key/client id
+
+Content-Type
+required
+string
+application/json
+
+x-gw-ims-org-id	
+string
+IMS organization ID. This needs to be sent only if it is desirable to receive the job status through Adobe I/O Events.
+
+Request Body schema: application/json
+inputs
+required
+Array of objects (input_objects_max_1) <= 1 items
+An object describing an input file. Currently supported filetypes include:jpeg, png, psd, tiff
+
+options
+required
+object (options)
+Layer Options for add or edit
+
+outputs
+required
+Array of objects (output_objects) non-empty
+An array of hashes describing the output files. Output file format can be any of psd, jpeg, png, or tiff and storage type can be any of external, adobe, azure or dropbox
+
+Responses
+202Successful operation
+400Bad Request
+402Trial Limit Exceeded
+403Unauthorized
+404Not Found
+409File Overwrite Error
+410Asset Link Invalid
+500Internal Server Error
+
+POST
+/pie/psdService/documentOperations
+Request samples
+Payloadshell
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"inputs": [
+{}
+],
+"options": {
+"layers": [],
+"document": {},
+"globalFont": "string",
+"fonts": [],
+"manageMissingFonts": "fail"
+},
+"outputs": [
+{}
+]
+}
+Response samples
+202400402403404409410
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"_links": {
+"self": {}
+}
+}
+Get layer info
+Get layer informations of a PSD document. To get status of this job, call Manifest Status API.
+
+header Parameters
+Authorization
+required
+string
+Authorization
+
+x-api-key
+required
+string
+API key/client id
+
+Content-Type
+required
+string
+application/json
+
+x-gw-ims-org-id	
+string
+IMS organization ID. This needs to be sent only if it is desirable to receive the job status through Adobe I/O Events.
+
+Request Body schema: application/json
+inputs
+required
+Array of objects (input_objects_max_1) <= 1 items
+An object describing an input file. Currently supported filetypes include:jpeg, png, psd, tiff
+
+options	
+object
+Responses
+202Successful operation
+400Bad Request
+402Trial Limit Exceeded
+403Unauthorized
+404Not Found
+500Internal Server Error
+
+POST
+/pie/psdService/documentManifest
+Request samples
+Payloadshell
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"inputs": [
+{}
+],
+"options": {
+"thumbnails": {}
+}
+}
+Response samples
+202400402403404
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"_links": {
+"self": {}
+}
+}
+Get the status of documentManifest
+Returns the status of documentManifest API. Please expand 200 Successful operation under Responses to know details of the status returned.
+
+path Parameters
+jobId_documentmanifest
+required
+string
+The jobId to get status for.
+
+header Parameters
+Authorization
+required
+string
+Authorization
+
+x-api-key
+required
+string
+API key/client id
+
+Content-Type
+required
+string
+application/json
+
+x-gw-ims-org-id	
+string
+IMS organization ID. This needs to be sent only if it is desirable to receive the job status through Adobe I/O Events.
+
+Responses
+200Successful operation
+
+GET
+/pie/psdService/status/{jobId_documentmanifest}
+Response samples
+200
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"jobId": "f54e0fcb-260b-47c3-b520-de0d17dc2b67",
+"outputs": [
+{}
+]
+}
+Create a new psd
+Create a new psd optionaly with layers and generate renditions or save as PSD. To get status of this job, call Status API.
+
+header Parameters
+Authorization
+required
+string
+Authorization
+
+x-api-key
+required
+string
+API key/client id
+
+Content-Type
+required
+string
+application/json
+
+x-gw-ims-org-id	
+string
+IMS organization ID. This needs to be sent only if it is desirable to receive the job status through Adobe I/O Events.
+
+Request Body schema: application/json
+options
+required
+object
+User can create a document using the options block.
+
+outputs
+required
+Array of objects (output_objects) non-empty
+An array of hashes describing the output files. Output file format can be any of psd, jpeg, png, or tiff and storage type can be any of external, adobe, azure or dropbox
+
+Responses
+202Successful operation
+400Bad Request
+402Trial Limit Exceeded
+403Unauthorized
+404Not Found
+409File Overwrite Error
+410Asset Link Invalid
+500Internal Server Error
+
+POST
+/pie/psdService/documentCreate
+Request samples
+Payloadshell
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"options": {
+"document": {},
+"layers": [],
+"globalFont": "string",
+"fonts": [],
+"manageMissingFonts": "fail"
+},
+"outputs": [
+{}
+]
+}
+Response samples
+202400402403404409410
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"_links": {
+"self": {}
+}
+}
+Create an artboard
+Creates an artboard. To get status of this job, call Status API.
+To know more about this feature refer Artboards
+
+header Parameters
+Authorization
+required
+string
+Authorization
+
+x-api-key
+required
+string
+API key/client id
+
+Content-Type
+required
+string
+application/json
+
+x-gw-ims-org-id	
+string
+IMS organization ID. This needs to be sent only if it is desirable to receive the job status through Adobe I/O Events.
+
+Request Body schema: application/json
+options
+required
+object
+outputs
+required
+Array of objects (output_objects) non-empty
+An array of hashes describing the output files. Output file format can be any of psd, jpeg, png, or tiff and storage type can be any of external, adobe, azure or dropbox
+
+Responses
+202Successful operation
+400Bad Request
+402Trial Limit Exceeded
+403Unauthorized
+404Not Found
+409File Overwrite Error
+410Asset Link Invalid
+500Internal Server Error
+
+POST
+/pie/psdService/artboardCreate
+Request samples
+Payloadshell
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"options": {
+"artboard": []
+},
+"outputs": [
+{}
+]
+}
+Response samples
+202400402403404409410
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"_links": {
+"self": {}
+}
+}
+Get the status of a job
+Returns the status of a job. Please expand 200 Successful operation under Responses to know details of the status returned.
+
+path Parameters
+jobId
+required
+string
+The jobId to get status for.
+
+header Parameters
+Authorization
+required
+string
+Authorization
+
+x-api-key
+required
+string
+API key/client id
+
+Content-Type
+required
+string
+application/json
+
+x-gw-ims-org-id	
+string
+IMS organization ID. This needs to be sent only if it is desirable to receive the job status through Adobe I/O Events.
+
+Responses
+200Successful operation
+
+GET
+/pie/psdService/status/{jobId}
+Response samples
+200
+Content type
+application/json
+
+Copy
+Expand allCollapse all
+{
+"jobId": "f54e0fcb-260b-47c3-b520-de0d17dc2b67",
+"outputs": [
+{}
+],
+"_links": {
+"self": {}
+}
+}

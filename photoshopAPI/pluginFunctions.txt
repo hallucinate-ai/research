@@ -1,0 +1,23 @@
+//HALLUCINATE APP INTEGRATION FOR PHOTOSHOP API FUNCTIONS 
+//Photoshop plugin code will be generated from the functions below 
+function rearrange-layer(layerID, index){
+  //the function rearrange-layer will rearrange the layers within the photoshop document. It takes as input two variables, the first is an integer named layerID which takes the layerID that is going to be moved the second is an integer named index which defines the position of the layer from the top of the layers starting at index 0, it returns a boolean value for success or failure.
+  let emits = {}
+  emits =  + JSON.parse"{"success": "boolean"}")
+  return (emits)
+}
+
+function rasterize(layer){
+  //The function rasterize will convert a vector layer into a pixel layer. It takes 1 argument which is an integer called layer, which is the layer to rasterize. The function returns a boolean value, true if the rasterization was successful, false otherwise.
+  let emits = {}
+  emits =  + JSON.parse"{"_obj": "rasterizeLayer", "_target": [{"_enum": "ordinal", "_ref": layer}]}")
+  return (emits)
+}
+
+function save-selection(name, channel){
+  //the function save-selection will save the area in the photoshop document that is currently selected, it takes two arguments the first one called name defines the name of the document the second is called channel which takes a selection object as input, the function returns the name
+  let emits = {}
+  emits =  + JSON.parse"{name: "string"}")
+  return (emits)
+}
+

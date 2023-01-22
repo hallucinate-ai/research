@@ -1,0 +1,17 @@
+[
+	{
+		"_obj": "fill",
+		"mode": {
+			"_enum": "blendMode",
+			"_value": "normal"
+		},
+		"opacity": {
+			"_unit": "percentUnit",
+			"_value": 100.0
+		},
+		"using": {
+			"_enum": "fillContents",
+			"_value": "black"
+		}
+	}
+]

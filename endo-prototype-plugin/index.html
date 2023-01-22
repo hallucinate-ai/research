@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<script src="index.js"></script>    
+</head>
+<style>
+	body {
+		color: white;
+		padding: 0 16px;
+	}
+	li:before {
+		content: '• ';
+		width: 3em;
+	}
+
+	#layers {
+		border: 1px solid #808080;
+		border-radius: 4px;
+		padding: 16px;
+	}
+</style>
+<body>
+	<div id="toolbox">
+		<sp-heading>Select Layer</sp-heading>
+		<sp-body id="layers">
+			No layers
+		</sp-body>
+		<sp-heading>Settings</sp-heading>
+		<sp-body id="settings">
+			<sp-slider id="strength" min="0" max="1" value="0.5">
+				<sp-label slot="label">Strength</sp-label>
+			</sp-slider>
+			<sp-slider id="temperature" min="0" max="1" value="0.5">
+				<sp-label slot="label">Temperature</sp-label>
+			</sp-slider>
+			<sp-slider id="clamp" min="0" max="1" value="0.5">
+				<sp-label slot="label">Clamp Total</sp-label>
+			</sp-slider>
+			<sp-slider id="clamp" min="0" max="1" value="0.5">
+				<sp-label slot="label">Clamp Hue</sp-label>
+			</sp-slider>
+			<sp-slider id="clamp" min="0" max="1" value="0.5">
+				<sp-label slot="label">Clamp Saturation</sp-label>
+			</sp-slider>
+			<sp-slider id="clamp" min="0" max="1" value="0.5">
+				<sp-label slot="label">Clamp Value</sp-label>
+			</sp-slider>
+		</sp-body>
+		<sp-body>
+		 <sp-button id="imageGenerate">Generate Image</sp-button>
+		 <sp-button id="saveImage">Save Image</sp-button><div><p>
+		</sp-body>
+		<sp-body>
+			<label for="endpoint">Endpoint</label>
+			<sp-textfield id="endpoint" type="text" value="https://127.0.0.1:1488/img2img-server.py" placeholder="https://127.0.0.1:1488/img2img-server.py" />
+		</sp-body>
+		<sp-body>
+			<label for="accesstoken">Access Token</label>
+			<sp-textfield id="accesstoken" type="text" value="" placeholder="access token" />
+		</sp-body>
+	</div>
+	<div id="preview" style="display:block; float: right;">
+		<sp-heading>Preview</sp-heading>
+		<sp-body>
+			<img id="previewImage" src="https://picsum.photos/200/300" />
+		</sp-body>
+</body>
+</html>

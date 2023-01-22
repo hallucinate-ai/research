@@ -1,0 +1,4 @@
+[
+{"_obj":"selectNoLayers","_target":[{"_enum":"ordinal","_ref":"layer"}]},
+{"_obj":"invokeCommand","commandID":-727}
+]
